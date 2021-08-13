@@ -5,3 +5,5 @@ services:
 before_install:
   - docker build -t chauhan17nitin/docker-react -f Dockerfile.dev .
 
+script:
+  - docker run chauhan17nitin/docker-react npm run test -- --covrage
